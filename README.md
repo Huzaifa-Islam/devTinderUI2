@@ -9,3 +9,11 @@
 - Lets create a routing feature.. as we cannot show everything on one page..
 - we will use react browser router -- read the documentation --> npm i react-router-dom
 - we will use this react router dom in the app.jsx file and define the routers and element/component/code to show on that path 
+
+- Lets plan how our application will look like
+Body
+    NavBar
+    Route=/ => Feed
+    Route=/login => Login
+    Route=/connections => Connections
+    Route=/profile => profile
