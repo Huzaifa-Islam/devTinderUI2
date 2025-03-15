@@ -30,3 +30,10 @@ Body
 -Still if the api is hit after doing the above changes, the cookies will not come
 -In Frontend as well, add a config withCredentials as true in axios while making an api call
 -Hit the api, the token will come in the browser cookies 
+
+After hitting the login api and getting a success response, lets store the user data in the redux store. 
+Docs - https://redux-toolkit.js.org/tutorials/quick-start
+lets install redux toolkit  --> npm i @reduxjs/toolkit react-redux
+Now steps to setup store --> configureStore ==> Provider ==> createSlice ==> add reducer to Store
+useDispatch --> to dispatch action (add data to redux store)
+useSelector --> subscribing to store (get data from redux store)
