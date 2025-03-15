@@ -37,3 +37,6 @@ lets install redux toolkit  --> npm i @reduxjs/toolkit react-redux
 Now steps to setup store --> configureStore ==> Provider ==> createSlice ==> add reducer to Store
 useDispatch --> to dispatch action (add data to redux store)
 useSelector --> subscribing to store (get data from redux store)
+
+When user logs in and now refreshed the browser page, do not logout the user instead make a profile/view call to get the user again using the toen which is there in the cookies.. Bcz just refreshing the page do not cause cookies to be removed, so we can use the token to get our user and store the value in the redux store.
+Also handled a case when user is not logged in, user cannot go to any other routes.. or if user is logged in and the token is expired or deleted manually from the browser then when user tries to do anything, or refreshes the page, user should be taken to login page.
